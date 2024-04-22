@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Event</title>
+</head>
+<body>
+    <h1>Dom special Event</h1>
+    <!-- option 1  -- directly set on the html element  -->
+    <button onclick="document.body.style.backgroundColor= 'yellow'">Make me Yellow</button>
+    <!-- option 2 --  add onclick function on the html element *** -->
+    <button onclick="makeRed()">Make me Red</button>
+    <!-- option 3.1  -->
+    <button id="make-blue">Make me Blue</button>
+    <!-- option 3.2  -->
+    <button id="make-purple">Make Purple</button>
+
+    <!-- option 4.1-->
+    <button id="make-pink">Make pink</button>
+    <!-- option 4.2-->
+    <button id="make-green">Make Green</button>
+    <!-- option-4 final -->
+    <button id="make-goldenrod">Make GoldenRod</button>
+
+
+
+<script>
+    document.getElementById('make-goldenrod').addEventListener('click', function(){
+        document.body.style.backgroundColor = 'goldenrod'
+    })
+</script>
+    
+    
+    <script src="event.js"></script>
+</body>
+</html>
